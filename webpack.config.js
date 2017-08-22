@@ -52,7 +52,7 @@ module.exports = {
 
         // Load and declare React as global variable (= window.react)
         new webpack.ProvidePlugin({
-            React: 'react',
+            React: 'react'
         })
     ]
 }
