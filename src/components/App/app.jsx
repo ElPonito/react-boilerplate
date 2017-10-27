@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import bender from '../../assets/images/bender.png'
 
 const App = ({children}) => (

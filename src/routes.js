@@ -1,4 +1,5 @@
-import { IndexRoute, Route, BrowserRouter } from 'react-router'
+import { Route, Switch } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
 import App from './components/App'
 import Counter from './components/Counter'
 import NotFound from './components/NotFound'
@@ -6,11 +7,12 @@ import HelloWorld from './components/HelloWorld'
 
 export default () => (
     <BrowserRouter>
-        <Route path="/" component={App}>
-            <IndexRoute component={Counter}/>
-            <Route path="hello-world" component={HelloWorld}/>
-        </Route>
-        <Route path="*" component={NotFound}/>
+        <App>
+            <Switch>
+                <Route exact path="/" component={Counter}/>
+                <Route path="/hello-world" component={HelloWorld}/>
+                <Route path="*" component={NotFound}/>
+            </Switch>
+        </App>
     </BrowserRouter>
 )
-
