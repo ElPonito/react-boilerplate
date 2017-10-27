@@ -1,5 +1,4 @@
-import { Route, Switch } from 'react-router'
-import { BrowserRouter } from 'react-router-dom'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import App from './components/App'
 import Counter from './components/Counter'
 import NotFound from './components/NotFound'
